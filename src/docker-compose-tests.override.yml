@@ -12,7 +12,7 @@ services:
 
   sql-data-test:
     environment:
-      - SA_PASSWORD=Pass@word
+      - MSSQL_SA_PASSWORD=Pass@word   # TOR, 29.10.2023 changed: was SA_PASSWORD
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
